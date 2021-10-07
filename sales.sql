@@ -10,7 +10,7 @@ DROP DATABASE IF EXISTS sales;
         salesman_no VARCHAR(10),
         s_name VARCHAR(20) NOT NULL,
         place VARCHAR(10),
-        phone INT(10),
+        phone INT(10) UNIQUE,
         CONSTRAINT salesman_no_prk PRIMARY KEY(salesman_no)
     );
 
